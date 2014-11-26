@@ -581,7 +581,7 @@
     return height;
 }
 
-- (CGFloat) tableView:(UITableView *)theTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath // UIText(Table?)ViewDelegate
+- (CGFloat) tableView:(UITableView *)theTableView heightForRowAtIndexPath:(NSIndexPath *)indexPath // UITableViewDelegate
 {
     NSString *text;
     NSString *localeCode;
@@ -653,6 +653,8 @@
         {
             LtTranslationData *translation = [[fetchedResultsController fetchedObjects] objectAtIndex:indexPath.section];
             
+            // Setting the text1Text field below triggers the CoreData update and
+            // refreshes the tableView.
             if (indexPath.row == 0)
             {
                 translation.text1Text = changedTextView.text;
@@ -662,10 +664,7 @@
                 translation.text2Text = changedTextView.text;
             }
             
-            // Doesn't seem like we need these.  Not sure why I had them.
-            // Tested in iOS 6,7,8 and seems to work without them.
-            //[tableView beginUpdates];
-            //[tableView endUpdates];  // height calculations done here.
+            
         }
         @catch (NSException *ex) {
             if (![[ex name] isEqualToString:NSObjectInaccessibleException])
