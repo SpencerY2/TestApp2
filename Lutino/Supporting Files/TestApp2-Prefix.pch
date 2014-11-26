@@ -1,0 +1,37 @@
+//
+// Prefix header for all source files of the 'LybabTrans' target in the 'LybabTrans' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+#import "LtAppNameConstants.h"
+
+#define dDeviceOrientation [[UIDevice currentDevice] orientation]
+
+// check device orientation
+/*
+#define dDeviceOrientation [[UIDevice currentDevice] orientation]
+#define isPortrait  UIDeviceOrientationIsPortrait(dDeviceOrientation)
+#define isLandscape UIDeviceOrientationIsLandscape(dDeviceOrientation)
+#define isFaceUp    dDeviceOrientation == UIDeviceOrientationFaceUp   ? YES : NO
+#define isFaceDown  dDeviceOrientation == UIDeviceOrientationFaceDown ? YES : NO
+*/
+
+/*
+ UIDevice.h:
+ 
+ #define UIDeviceOrientationIsPortrait(orientation)  ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown)
+ #define UIDeviceOrientationIsLandscape(orientation) ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight)
+
+ */
+#endif

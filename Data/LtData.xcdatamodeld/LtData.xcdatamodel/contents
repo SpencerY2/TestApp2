@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="12F45" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="LtLocaleData" representedClassName="LtLocaleData" syncable="YES">
+        <attribute name="largeFlag" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mediumFlag" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="smallFlag" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="services" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LtServiceData" inverseName="locales" inverseEntity="LtServiceData" syncable="YES"/>
+        <relationship name="translation1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LtTranslationData" inverseName="locale1" inverseEntity="LtTranslationData" syncable="YES"/>
+        <relationship name="translation2" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LtTranslationData" inverseName="locale2" inverseEntity="LtTranslationData" syncable="YES"/>
+    </entity>
+    <entity name="LtPropertyData" representedClassName="LtPropertyData" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LtServiceData" representedClassName="LtServiceData" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locales" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LtLocaleData" inverseName="services" inverseEntity="LtLocaleData" syncable="YES"/>
+    </entity>
+    <entity name="LtServiceLocaleData" representedClassName="LtServiceLocaleData" syncable="YES">
+        <attribute name="locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="service" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LtTranslationData" representedClassName="LtTranslationData" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="text1Locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text1Text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text2Locale" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text2Text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locale1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LtLocaleData" inverseName="translation1" inverseEntity="LtLocaleData" syncable="YES"/>
+        <relationship name="locale2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LtLocaleData" inverseName="translation2" inverseEntity="LtLocaleData" syncable="YES"/>
+    </entity>
+    <entity name="LtUsageData" representedClassName="LtUsageData" syncable="YES">
+        <attribute name="lastRechargeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="racCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rdcCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remainingAnytimeCredits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="remainingDailyCredits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalCharacters" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalTranslations" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LtLocaleData" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="LtPropertyData" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="LtServiceData" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="LtServiceLocaleData" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="LtTranslationData" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="LtUsageData" positionX="0" positionY="0" width="128" height="148"/>
+    </elements>
+</model>

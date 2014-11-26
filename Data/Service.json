@@ -1,0 +1,8 @@
+[
+ { "name": "GoogleTranslator" },
+ { "name": "MicrosoftTranslator" },
+ { "name": "GoogleRecognizer" },
+ { "name": "NuanceRecognizer" },
+ { "name": "GoogleVocalizer" },
+ { "name": "NuanceVocalizer" }
+ ]
