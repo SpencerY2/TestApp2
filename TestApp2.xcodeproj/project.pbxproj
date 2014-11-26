@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090D65FD1A264F7A00468157 /* Khmer Sangam MN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 090D65F91A264F7A00468157 /* Khmer Sangam MN.ttf */; };
+		090D65FE1A264F7A00468157 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 090D65FA1A264F7A00468157 /* Roboto-Light.ttf */; };
+		090D65FF1A264F7A00468157 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 090D65FB1A264F7A00468157 /* Roboto-Regular.ttf */; };
+		090D66001A264F7A00468157 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 090D65FC1A264F7A00468157 /* Roboto-Thin.ttf */; };
 		0919E592185B608E00ECDC65 /* ear.12x20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919E58F185B608E00ECDC65 /* ear.12x20@2x.png */; };
 		0919E596185B608E00ECDC65 /* ear.12x20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0919E590185B608E00ECDC65 /* ear.12x20.png */; };
 		093AE5D41A1CAF2100C144F1 /* advanced-features.16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 093AE5D11A1CAF2100C144F1 /* advanced-features.16x16.png */; };
@@ -164,6 +168,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090D65F91A264F7A00468157 /* Khmer Sangam MN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Khmer Sangam MN.ttf"; sourceTree = "<group>"; };
+		090D65FA1A264F7A00468157 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		090D65FB1A264F7A00468157 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		090D65FC1A264F7A00468157 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		0919E58F185B608E00ECDC65 /* ear.12x20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ear.12x20@2x.png"; sourceTree = "<group>"; };
 		0919E590185B608E00ECDC65 /* ear.12x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear.12x20.png; sourceTree = "<group>"; };
 		092187FE17BC7AA500800359 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -364,6 +372,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090D65F81A264F7A00468157 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				090D65F91A264F7A00468157 /* Khmer Sangam MN.ttf */,
+				090D65FA1A264F7A00468157 /* Roboto-Light.ttf */,
+				090D65FB1A264F7A00468157 /* Roboto-Regular.ttf */,
+				090D65FC1A264F7A00468157 /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0925893A18061F0D0079F769 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +421,7 @@
 		0967A40717A22DD300602920 = {
 			isa = PBXGroup;
 			children = (
+				090D65F81A264F7A00468157 /* Fonts */,
 				094F887E182CAFC000B40D9C /* Utilities */,
 				0925893A18061F0D0079F769 /* Data */,
 				0967A41917A22DD300602920 /* Lutino */,
@@ -762,6 +782,7 @@
 				09FEC8941853EC5B0028FDD4 /* ServiceLocale.json in Resources */,
 				09FECF401856F0990028FDD4 /* lock.16x16.png in Resources */,
 				09FEC8A11853EC5B0028FDD4 /* Usage.json in Resources */,
+				090D65FD1A264F7A00468157 /* Khmer Sangam MN.ttf in Resources */,
 				09B4E01B1A255A27007FF3EF /* us.24x24@3x.png in Resources */,
 				09B4DF9C1A2364F3007FF3EF /* microphone.14x24@4x.png in Resources */,
 				09DCA0A31A20A44700782AAB /* share.17x24@2x.png in Resources */,
@@ -776,6 +797,8 @@
 				09B4DFFF1A25529E007FF3EF /* lock.16x16@3x.png in Resources */,
 				09FECF2C1856DCE30028FDD4 /* continuous.16x16.png in Resources */,
 				09FECF261856C2030028FDD4 /* sound.16x16@2x.png in Resources */,
+				090D66001A264F7A00468157 /* Roboto-Thin.ttf in Resources */,
+				090D65FF1A264F7A00468157 /* Roboto-Regular.ttf in Resources */,
 				09FEC8BE1853EC5B0028FDD4 /* Service.json in Resources */,
 				09B4DFF91A25529E007FF3EF /* ear.12x20@4x.png in Resources */,
 				09B4E0031A25529E007FF3EF /* music-notes.16x16@3x.png in Resources */,
@@ -828,6 +851,7 @@
 				09B4DFB21A24B516007FF3EF /* LutinoFreeLogo.145x40.png in Resources */,
 				09DCA09D1A20A44700782AAB /* share.12x16@2x.png in Resources */,
 				09B4DFBA1A24B516007FF3EF /* LutinoLogo.90x40@3x.png in Resources */,
+				090D65FE1A264F7A00468157 /* Roboto-Light.ttf in Resources */,
 				09B4E0091A25529E007FF3EF /* sound.16x16@4x.png in Resources */,
 				09FECD161854D9A90028FDD4 /* microphone.14x24@2x.png in Resources */,
 				09B4E0051A25529E007FF3EF /* music-notes.16x16@4x.png in Resources */,
